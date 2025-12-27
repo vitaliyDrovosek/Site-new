@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сады сибниисхоза</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <button class="burger" id="burger" onclick="OpenMenu()">=</button>
+    <div class="menu" id="menu">
+            <a href="#main" onclick="CloseMenu()">Главная</a>
+            <a href="#articles" onclick="CloseMenu()">Cтатьи</a>
+            <a href="#about" onclick="CloseMenu()">О нас</a>
+            <a href="#contacts" onclick="CloseMenu()">Контакты</a>
+            <input placeholder="Поиск" name="search" />
+            <a href="log-in.html" onclick="CloseMenu()">Вход</a>
+            <a href="reg.html" onclick="CloseMenu()">Регистрация</a>
+    </div>
+    <header>
+        <figure class="logo">
+            <img src="img/logo.jpg" alt="фото не загрузилось" />
+            <p>Сады сибниисхоза</p>
+        </figure>
+        <nav>
+            <ul>
+                <ol><a href="#main">Главная</a></ol>
+                <ol><a href="#articles">Cтатьи</a></ol>
+                <ol><a href="#about">О нас</a></ol>
+                <ol><a href="#contacts">Контакты</a></ol>
+                <ol><input name="search" placeholder="Поиск" /></ol>
+                <ol><a href="log-in.html">Вход</a></ol>
+                <ol><a href="reg.html">Регистрация</a></ol>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+            <article id="main">
+                <div class="overlay">
+                    <h1>Все про мир растений</h1>
+                    <p>
+                        Сибирский научно-исследовательский институт сельского хозяйства (СибНИИСХоз)
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="second-section">
+            <article id="articles">
+                <h2>Статьи</h2>
+                <div class="articles">
+                    <div class="article">
+                        <img src="img/cherry.jpg" alt="картинка не загрузилась">
+                        <h3>Как посадить гортензии</h3>
+                        <p>ЛУчшее средство для таких ситуаций, 12 грамм...</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="article">
+                        <img src="img/Kalina-Bul-donezh.jpg" alt="картинка не загрузилась">
+                        <h3>Лучшие семена</h3>
+                        <p>В магаине "магнит" вчера редакция нашего сайта нашла...</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="article">
+                        <img src="img/Kalina-Bul-donezh.jpg" alt="картинка не загрузилась">
+                        <h3>Окисление земли </h3>
+                        <p>И такое бывает...</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </article>
+            <article id="about">
+                <h2>О нас</h2>
+                <p>Институт ведёт свою историю от опытного хутора Сибирского казачьего войска, основанного в 1828 году,
+                    первого в Сибири и одного из первых в России опытного хозяйства. Указ о создании Омского опытного
+                    хутора издал И. А. Вельяминов, генерал-губернатор Западной Сибири и почётный член Московского
+                    общества сельского хозяйства. Указом выделяется 20 десятин земли с различными почвами для опытов;
+                </p>
+                <h3>Цель создания</h3>
+                <p>Содействие распространению начал земледелия в поселениях линейного казачьего войска</p>
+                <h3>Одно из основных направлений деятельности института</h3>
+                <p>Селекция зерновых,кормовых культур,а так-же производством посадочного материала
+                    плодово-ягодных,декоративных культур,рассады земляники и многолетних цветов</p>
+                <h3>Достижения в данной области</h3>
+                <p>Селекционерами института создано более двухсот сортов различных культур, которые характеризуются
+                    высоким генетическим потенциалом продуктивности, скороспелостью, устойчивостью к стрессам и способны
+                    давать продукцию хорошего качества</p>
+            </article>
+            <article id="contacts">
+                <p>
+                    Остались вопросы? Звоните!
+                    <span>+7(913) 644 10 56</span>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="foot-nav">
+            <a href="#main">Главная</a>
+            <a href="#articles">Cтатьи</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+            <a href="log-in.html">Вход</a>
+            <a href="reg.html">Регистрация</a>
+        </div>
+        <div class="info">
+            Говорков Евгений | 2025 &copy
+        </div>
+    </footer>
+    <script>
+        function OpenMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("open")
+        }
+        function CloseMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.remove("open")
+        }
+
+    </script>
+</body>
+
+</html>
